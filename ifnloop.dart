@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main(){
   // if else
   //var nilai = 33;
@@ -60,11 +62,24 @@ void main(){
     
   // }
 
-  //do while
-  List datamhs=['Sindy','Windy','Karen', 'Vincent'];
-  var i=0;
-  do {
-    print('nama mhs ke ${i+1} adalah ${datamhs[i]}');
-    i++;
-  } while (i<datamhs.length);
+  // //do while
+  // List datamhs=['Sindy','Windy','Karen', 'Vincent'];
+  // var i=0;
+  // do {
+  //   print('nama mhs ke ${i+1} adalah ${datamhs[i]}');
+  //   i++;
+  // } while (i<datamhs.length);
+
+
+  // input pengguna
+  List jawaban=['','','',''];
+  for (var i = 0; i < jawaban.length; i++) {
+    stdout.writeln('Masukkan angka ${i+1}:');
+    jawaban[i] = stdin.readLineSync();
+  }
+  // stdout.writeln('Masukkan angka 1:');
+  // var input1=stdin.readLineSync();
+
+  print('inputan user adalah $jawaban');
+
 }
